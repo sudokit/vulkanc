@@ -7,20 +7,21 @@
 #include "engine/engine.h"
 #include "engine/state.h"
 
-int main() {
-  State state = {
-      .wTitle = "WINDOW!",
-      .wWidth = 800,
-      .wHeight = 600,
-      .wResizable = false,
-      .apiVersion = VK_API_VERSION_1_3,
-  };
-  run(&state);
+int main()
+{
+    State state = {
+        .wTitle = "WINDOW!",
+        .wWidth = 800,
+        .wHeight = 600,
+        .wResizable = false,
+        .apiVersion = VK_API_VERSION_1_3,
+    };
+    run(&state);
 
-  // init(&state);
-  // loop(&state);
-  // cleanup(&state);
+    // init(&state);
+    // loop(&state);
+    // cleanup(&state);
 
-  log_info("Exiting");
-  return 0;
+    log_info("Exiting");
+    return 0;
 }
