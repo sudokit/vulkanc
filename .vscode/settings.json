@@ -1,0 +1,10 @@
+{
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "files.associations": {
+        "iostream": "cpp",
+        "stdexcept": "cpp",
+        "string": "cpp",
+        "memory_resource": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "enabled"
+}
