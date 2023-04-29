@@ -4,7 +4,7 @@
 #include <log.h>
 #include <signal.h>
 
-#define VKRC(ERROR, FORMAT, ...)                                                                                       \
+#define PANIC(ERROR, FORMAT, ...)                                                                                      \
     {                                                                                                                  \
         if (ERROR)                                                                                                     \
         {                                                                                                              \

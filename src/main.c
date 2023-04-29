@@ -7,14 +7,19 @@
 #include "engine/engine.h"
 #include "engine/state.h"
 
+const unsigned int WINDOW_WIDTH = 800;
+const unsigned int WINDOW_HEIGHT = 600;
+
 int main()
 {
     State state = {
         .wTitle = "WINDOW!",
-        .wWidth = 800,
-        .wHeight = 600,
+        .wWidth = WINDOW_WIDTH,
+        .wHeight = WINDOW_HEIGHT,
         .wResizable = false,
-        .apiVersion = VK_API_VERSION_1_3,
+        .vk_apiVersion = VK_API_VERSION_1_3,
+        .vk_applicationName = "vulkanc",
+        .vk_engineName = "vulkanc engine",
     };
     run(&state);
 
